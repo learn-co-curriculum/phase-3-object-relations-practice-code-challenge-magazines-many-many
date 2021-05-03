@@ -1,5 +1,7 @@
 # Object Relations Practice Code Challenge - Magazines
 
+## Introduction
+
 For this assignment, we'll be working with a Magazine domain.
 
 We have three models: `Magazine`, `Subscription`, and `Reader`.
@@ -37,15 +39,36 @@ Similarly, messy code that works is better than clean code that doesn't. First, 
 The starter code has migrations and models for the initial `Reader`, `Magazine` and `Subscription` models, and seed data for some `Reader`s and `Magazine`s. The schema currently looks like this: 
 
 #### `readers` Table
-| Column      | Type      |
-| ------------| ----------|
-| name        | String    |
-| email       | String    |
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tr>
+    <th>Column</th>
+    <th>Type</th>
+  </tr>
+  
+  <tr>
+    <td>name</td>
+    <td>string</td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>string</td>
+  </tr>
+ </table>
 
 #### `magazines` Table
-| Column                | Type      |
-| -----------           | --------- |
-| title                 | String    |
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tr>
+    <th>Column</th>
+    <th>Type</th>
+  </tr>
+  
+  <tr>
+    <td>title</td>
+    <td>string</td>
+  </tr>
+</table>
 
 You will need to create the migration for the `subscriptions` table using the attributes specified in the deliverables below.
 
