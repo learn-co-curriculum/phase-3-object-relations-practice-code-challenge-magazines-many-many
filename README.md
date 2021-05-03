@@ -55,6 +55,7 @@ The starter code has migrations and models for the initial `Reader`, `Magazine` 
     <td>string</td>
   </tr>
  </table>
+ 
 
 #### `magazines` Table
 
