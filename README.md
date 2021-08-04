@@ -40,36 +40,17 @@ The starter code has migrations and models for the initial `Reader`, `Magazine` 
 
 #### `readers` Table
 
-<table border="1" cellpadding="4" cellspacing="0">
-  <tr>
-    <th>Column</th>
-    <th>Type</th>
-  </tr>
-  
-  <tr>
-    <td>name</td>
-    <td>string</td>
-  </tr>
-  <tr>
-    <td>email</td>
-    <td>string</td>
-  </tr>
- </table>
+| Column | Type |
+| --- | --- |
+| name | string |
+| email | string |
  
 
 #### `magazines` Table
 
-<table border="1" cellpadding="4" cellspacing="0">
-  <tr>
-    <th>Column</th>
-    <th>Type</th>
-  </tr>
-  
-  <tr>
-    <td>title</td>
-    <td>string</td>
-  </tr>
-</table>
+| Column | Type |
+| --- | --- |
+| title | string |
 
 You will need to create the migration for the `subscriptions` table using the attributes specified in the deliverables below.
 
