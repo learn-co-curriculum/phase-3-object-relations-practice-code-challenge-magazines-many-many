@@ -28,6 +28,7 @@ GEM
     rack (2.0.7)
     rack-protection (2.0.7)
       rack
+    rake (13.0.6)
     require_all (3.0.0)
     sinatra (2.0.7)
       mustermann (~> 1.0)
@@ -50,6 +51,7 @@ DEPENDENCIES
   activerecord (~> 5.2)
   faker (~> 2.9)
   pry
+  rake
   require_all
   sinatra-activerecord
   sqlite3

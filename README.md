@@ -30,13 +30,13 @@ We've provided you with a tool that you can use to test your code. To use it, ru
 
 Writing error-free code is more important than completing all of the deliverables listed - prioritize writing methods that work over writing more methods that don't work. You should test your code in the console as you write.
 
-Similarly, messy code that works is better than clean code that doesn't. First, prioritize getting things working. Then, if there is time at the end, refactor your code to adhere to best practices. 
+Similarly, messy code that works is better than clean code that doesn't. First, prioritize getting things working. Then, if there is time at the end, refactor your code to adhere to best practices.
 
 **Before you submit!** Save and run your code to verify that it works as you expect. If you have any methods that are not working yet, feel free to leave comments describing your progress.
 
 ## What You Already Have
 
-The starter code has migrations and models for the initial `Reader`, `Magazine` and `Subscription` models, and seed data for some `Reader`s and `Magazine`s. The schema currently looks like this: 
+The starter code has migrations and models for the initial `Reader`, `Magazine` and `Subscription` models, and seed data for some `Reader`s and `Magazine`s. The schema currently looks like this:
 
 #### `readers` Table
 
@@ -44,7 +44,7 @@ The starter code has migrations and models for the initial `Reader`, `Magazine` 
 | --- | --- |
 | name | string |
 | email | string |
- 
+
 
 #### `magazines` Table
 
@@ -64,7 +64,7 @@ Remember: Active Record give your classes access to a lot of built-in methods! K
 
 ### Migrations
 
-Before working on the rest of the deliverables, you will need to create a migration for the `subscriptions` table. 
+Before working on the rest of the deliverables, you will need to create a migration for the `subscriptions` table.
 
 - A `Subscription` belongs to a `Magazine`, and a `Subscription` also belongs to an `Reader`. In your migration, create any columns your `subscriptions` table will need to establish these relationships.
   - The `subscriptions` table should also have a `price` column that stores an integer.
@@ -79,23 +79,23 @@ Use Active Record association macros and Active Record query methods where appro
 
 #### Subscription
 
-- `Subscription#reader`
+[DONE] - `Subscription#reader`
   - should return the `Reader` instance for this subscription
-- `Subscription#magazine`
+[DONE] - `Subscription#magazine`
   - should return the `Magazine` instance for this subscription
 
 #### Magazine
 
-- `Magazine#subscriptions`
+[DONE] - `Magazine#subscriptions`
   - returns a collection of all `Subscription` instances for this magazine
-- `Magazine#readers`
+[DONE] - `Magazine#readers`
   - returns a collection of all `Reader` instances who are subscribed to this magazine
 
 #### Reader
 
-- `Reader#subscriptions`
+[DONE] - `Reader#subscriptions`
   - should return a collection of all `Subscription` instances for this reader
-- `Reader#magazines`
+[DONE] - `Reader#magazines`
   - should return a collection of all `Magazine` instances that this reader is subscribed to
 
 ### Aggregate and Association Methods
